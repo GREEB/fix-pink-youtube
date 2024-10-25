@@ -7,7 +7,7 @@
 	"minimum_chrome_version": "121",
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "fix-pink-youtube@greeb.github.io",
+			"id": "{a0b675fe-bfff-4223-a597-6d4099e8c4b2}",
 			"strict_min_version": "109.0"
 		}
 	},
