@@ -33,6 +33,7 @@ jobs:
         if: env.DAILY_VERSION_CREATED
         uses: actions/upload-artifact@v3
         with:
+          name: distribution  # Set the name of the artifact
           path: ${{ env.DIRECTORY }}
       - name: Create release
         if: env.DAILY_VERSION_CREATED
