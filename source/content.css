@@ -1,22 +1,29 @@
+/* stylelint-disable declaration-no-important */
+.ytp-play-progress,
+#progress {
+	background: var(--yt-spec-static-brand-red) !important;
+}
 
-.ytp-play-progress, #progress{
-    background: var(--yt-spec-static-brand-red) !important;
+#progress.ytd-thumbnail-overlay-resume-playback-renderer {
+	background: var(--yt-spec-static-brand-red) !important;
 }
-ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer{
-    background: var(--yt-spec-static-brand-red) !important;
+
+.YtThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern {
+	background: var(--yt-spec-static-brand-red) !important;
 }
-.YtThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern{
-    background: var(--yt-spec-static-brand-red) !important;
+
+.YtChapteredProgressBarChapteredPlayerBarChapterRefresh {
+	background: var(--yt-spec-static-brand-red) !important;
 }
-.YtChapteredProgressBarChapteredPlayerBarChapterRefresh{
-    background: var(--yt-spec-static-brand-red) !important;
+
+.YtChapteredProgressBarChapteredPlayerBarFillRefresh {
+	background: var(--yt-spec-static-brand-red) !important;
 }
-.YtChapteredProgressBarChapteredPlayerBarFillRefresh{
-    background: var(--yt-spec-static-brand-red) !important;
+
+.YtProgressBarLineProgressBarPlayedRefresh {
+	background: var(--yt-spec-static-brand-red) !important;
 }
-.YtProgressBarLineProgressBarPlayedRefresh{
-    background: var(--yt-spec-static-brand-red) !important;
-}
-yt-page-navigation-progress[enable-refresh-signature-moments-web] #progress.yt-page-navigation-progress {
-    background: var(--yt-spec-static-brand-red) !important;
+
+#progress.yt-page-navigation-progress {
+	background: var(--yt-spec-static-brand-red) !important;
 }
