@@ -60,6 +60,7 @@ jobs:
       - name: Generate Changelog
         run: |
           # Determine the previous tag
+          mkdir -p artifact
           LAST_TAG=$(git describe --tags --abbrev=0 HEAD^)
 
           # Generate the list of commits since the last tag
