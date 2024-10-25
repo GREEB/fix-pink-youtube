@@ -3,12 +3,11 @@
 	"version": "1.3",
 	"description": "Fixes pink youtube progress bar and more to red",
 	"homepage_url": "https://github.com/GREEB/fix-pink-youtube",
-	"manifest_version": 3,
-	"minimum_chrome_version": "121",
+	"manifest_version": 2,
 	"browser_specific_settings": {
 		"gecko": {
 			"id": "{a0b675fe-bfff-4223-a597-6d4099e8c4b2}",
-			"strict_min_version": "109.0"
+			"strict_min_version": "54.0"
 		}
 	},
 	"icons": {
