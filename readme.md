@@ -7,6 +7,9 @@
 - Changes the progress bar in the main player to red
 - Changes the progress bar in thumbnails to red
 
+![fix player image](media/fix-player.png)
+![fix thumbnail image](media/fix-thumbnail.png)
+
 This add-on will try to keep up with future changes that youtube makes to colors to keep it red
 
 ## Getting started
