@@ -1,0 +1,1 @@
+r.style.setProperty('--yt-spec-static-brand-red', '#ff0000');
