@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history including all tags
       - uses: actions/setup-node@v3
         with:
           node-version-file: .nvmrc
@@ -44,15 +46,33 @@ jobs:
           zip -r "$FILENAME" ./*
           gh release create "$DAILY_VERSION" --generate-notes "$FILENAME"
   Firefox:
-    # Disabled until https://github.com/fregante/browser-extension-template/issues/78
     if: needs.Version.outputs.created
     needs: Version
     name: Submit (Firefox)
     environment: Firefox
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v3
-      - run: npx web-ext@7 sign --use-submission-api --channel listed
+        with:
+          name: distribution  # Name of the artifact to download
+          path: artifact
+
+      # Generate changelog based on recent commits
+      - name: Generate Changelog
+        run: |
+          # Determine the previous tag
+          LAST_TAG=$(git describe --tags --abbrev=0 HEAD^)
+
+          # Generate the list of commits since the last tag
+          CHANGELOG=$(git log "$LAST_TAG"..HEAD --oneline --pretty=format:"- %s (%h)")
+
+          # Write changelog to a file in the artifact directory
+          echo "$CHANGELOG" > artifact/CHANGELOG.txt
+
+      # Run web-ext sign with the changelog file
+      - name: Submit to Firefox Add-ons
+        run: npx web-ext sign --use-submission-api --channel listed --notes "$(cat ../artifact/CHANGELOG.txt)"
         working-directory: artifact
         env:
           WEB_EXT_API_KEY: ${{ secrets.WEB_EXT_API_KEY }}
