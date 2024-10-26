@@ -36,6 +36,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           path: ${{ env.DIRECTORY }}
+          name: distribution
       - name: Create release
         if: env.DAILY_VERSION_CREATED
         env:
