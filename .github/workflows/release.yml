@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
       - name: Fetch tags
-        run: git fetch --prune --unshallow --tags
+        run: git fetch --prune --tags
       - uses: actions/setup-node@v3
         with:
           node-version-file: .nvmrc
