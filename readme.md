@@ -29,7 +29,7 @@ there for reference we found a few different reds they used:
 --error-color: #dd2c00;
 ```
 
-I may build a little app to better visualize color changes over time with a bunch of archive snapshots as soon as the API is up again.
+I may build a [little app](https://github.com/GREEB/color-changes) to better visualize color changes over time with a bunch of archive snapshots as soon as the API is up again.
 
 
 ## Features
