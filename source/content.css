@@ -28,6 +28,6 @@
 	background: var(--yt-spec-static-brand-red) !important;
 }
 
-.yt-icon-shape > div > svg > g:first-of-type > path:first-of-type {
+#logo-icon > .yt-icon-shape > div > svg > g:first-of-type > path:first-of-type {
 	fill: var(--yt-spec-static-brand-red) !important;
 }
