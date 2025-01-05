@@ -31,3 +31,26 @@
 #logo-icon > .yt-icon-shape > div > svg > g:first-of-type > path:first-of-type {
 	fill: var(--yt-spec-static-brand-red) !important;
 }
+
+/* update 05.01.25 youtube changed how thumbnails work? */
+/* stylelint-disable */
+yt-page-navigation-progress[enable-refresh-signature-moments-web] #progress.yt-page-navigation-progress {
+	background: var(--yt-spec-static-brand-red) !important;
+}
+
+ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer {
+	background: var(--yt-spec-static-brand-red) !important;
+}
+.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern {
+	background: var(--yt-spec-static-brand-red) !important;
+}
+
+.ytChapteredProgressBarChapteredPlayerBarChapterRefresh {
+	background: var(--yt-spec-static-brand-red) !important;
+}
+
+.ytProgressBarLineProgressBarPlayedRefresh {
+	background: var(--yt-spec-static-brand-red) !important;
+}
+/* stylelint-enable */
+
