@@ -48,7 +48,9 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .ytChapteredProgressBarChapteredPlayerBarChapterRefresh {
 	background: var(--yt-spec-static-brand-red) !important;
 }
-
+.ytProgressBarLineProgressBarPlayed {
+	background: var(--yt-spec-static-brand-red) !important;
+}
 .ytProgressBarLineProgressBarPlayedRefresh {
 	background: var(--yt-spec-static-brand-red) !important;
 }
