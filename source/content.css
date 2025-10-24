@@ -54,5 +54,7 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .ytProgressBarLineProgressBarPlayedRefresh {
 	background: var(--yt-spec-static-brand-red) !important;
 }
-/* stylelint-enable */
+.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment{
+		background: var(--yt-spec-static-brand-red) !important;
+}
 
