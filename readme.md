@@ -1,7 +1,9 @@
 # Fix pink youtube
 
-> A firefox add-on to make youtube red again
+> A browser add-on to make youtube red again
 
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/fix-pink-youtube-progress/)
+[Chrome](https://chromewebstore.google.com/detail/fix-pink-youtube)
 ## Reference
 
 To make sure we use the right colors: we use a [07.05.2023 snapshot](https://web.archive.org/web/20230705011417/https://www.youtube.com/) from archive.org
