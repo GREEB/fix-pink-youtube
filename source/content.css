@@ -1,4 +1,5 @@
 /* stylelint-disable declaration-no-important */
+/* stylelint-disable selector-combinator-space-before */
 .ytp-play-progress,
 #progress {
 	background: var(--yt-spec-static-brand-red) !important;
@@ -28,7 +29,7 @@
 	background: var(--yt-spec-static-brand-red) !important;
 }
 
-#logo-icon>.yt-icon-shape>div>svg>g:first-of-type>path:first-of-type {
+#logo-icon > .yt-icon-shape > div > svg > g:first-of-type > path:first-of-type {
 	fill: var(--yt-spec-static-brand-red) !important;
 }
 
