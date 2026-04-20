@@ -28,7 +28,7 @@
 	background: var(--yt-spec-static-brand-red) !important;
 }
 
-#logo-icon > .yt-icon-shape > div > svg > g:first-of-type > path:first-of-type {
+#logo-icon>.yt-icon-shape>div>svg>g:first-of-type>path:first-of-type {
 	fill: var(--yt-spec-static-brand-red) !important;
 }
 
@@ -41,6 +41,7 @@ yt-page-navigation-progress[enable-refresh-signature-moments-web] #progress.yt-p
 ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer {
 	background: var(--yt-spec-static-brand-red) !important;
 }
+
 .ytThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern {
 	background: var(--yt-spec-static-brand-red) !important;
 }
@@ -48,13 +49,20 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .ytChapteredProgressBarChapteredPlayerBarChapterRefresh {
 	background: var(--yt-spec-static-brand-red) !important;
 }
+
 .ytProgressBarLineProgressBarPlayed {
 	background: var(--yt-spec-static-brand-red) !important;
 }
+
 .ytProgressBarLineProgressBarPlayedRefresh {
 	background: var(--yt-spec-static-brand-red) !important;
 }
-.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment{
-		background: var(--yt-spec-static-brand-red) !important;
+
+.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment {
+	background: var(--yt-spec-static-brand-red) !important;
 }
 
+.ytp-swatch-background-color {
+	background-color: var(--yt-spec-static-brand-red) !important;
+
+}
