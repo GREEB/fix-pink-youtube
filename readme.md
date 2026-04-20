@@ -38,11 +38,16 @@ I may build a [little app](https://github.com/GREEB/color-changes) to better vis
 
 - Changes the progress bar in the main player to red
 - Changes the progress bar in thumbnails to red
+- CSS only
 
 ![fix player image](media/fix-player.png)
 ![fix thumbnail image](media/fix-thumbnail.png)
 
 This add-on will try to keep up with future changes that youtube makes to colors to keep it red
+
+## Known issues
+
+The favicon is not changed just because i don't want to load an extra image. The favicon will be whatever youtube has currently.
 
 ## Getting started
 
